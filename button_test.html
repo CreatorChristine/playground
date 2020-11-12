@@ -48,9 +48,10 @@
         <h2>Summary</h2>
         <ul>
             <li><p>In order to have the option to open a link in a new tab (using right click), one must use the <code>a href</code> tag</p></li>
-            <li><p>The 'button' tag does not do anything by default. Only styles it like a button</p></li>
-            <li><p>Therefore, the <code>button</code> tag needs a <code>form</code> tag and <code>action-"link"</code> attribute OR <code>formaction="link"</code> attribute OR <code>a href</code> to be clickable</p></li>
+            <li><p>The <code>button</code> tag does not do anything by default. Only styles it like a button</p></li>
+            <li><p>Therefore, the <code>button</code> tag needs a <code>form</code> tag and <code>action="link"</code> attribute OR <code>formaction="link"</code> attribute OR <code>a href</code> to be clickable</p></li>
             <li><p><code>form</code> and <code>formaction="link"</code> attributes will add a <code>?</code> at the end of the url, unless using <code>method='get'</code></p></li>
+            <li><p>In some browsers, <code>form method='get'</code> will sometimes add a <code>?</code> to the end of the url. It can be avoided by using <code>post</code> instead of <code>get</code></p></li>
         </ul>
 
         <p><em>Disclaimer: each link can be defaulted to open in a new tab with <code>target='_blank'</code> as an attribute</em></p>
