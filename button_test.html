@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Testing buttons and new tabs options</h1>
+        <p>(Right click to see if they let you open in a new tab!)</p>
+
+        <h2>Buttons that work but can't open in a new tab</p>
+        <form>
+            <button formaction="https://www.qwant.com">Can you open me in a new tab?</button> <!-- opens with a ? at end of link -->
+        </form> <!-- can't open in new tab -->
+        
+        <form action="https://www.qwant.com">
+            <button>Try me too!</button> <!-- opens with a ? at end of link -->
+        </form> <!-- can't open in new tab -->
+        
+        <form method='get' action="https://www.qwant.com">
+            <button type='submit'>Don't forget me!</button> <!-- opens without a ? at end of link -->
+        </form> <!-- can't open in new tab -->
+        
+        <h2>Buttons that work and <em>can</em> open in a new tab</h2>
+        <a href="https://www.qwant.com">
+            <button>How about me?</button> <!-- opens without a ? at end of link -->
+        </a> <!-- can open in new tab-->
+
+        <h2>Summary</h2>
+        <ul>
+            <li><p>In order to have the option to open a link in a new tab (using right click), one must use the 'a href' tag</p></li>
+            <li><p>The 'button' tag does not do anything by default. Only styles it like a button</p></li>
+            <li><p>Therefore, the 'button' tag needs a 'form' tag and action attribute OR formaction attribute OR 'a href' to be clickable</p></li>
+            <li><p>'form' and 'formaction' attributes will add a '?' at the end of the url, unless using "method='get'"</p></li>
+        </ul>
+    </body>
+</html>
